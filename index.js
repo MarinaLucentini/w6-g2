@@ -34,7 +34,7 @@ form.addEventListener("submit", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", timer);
-function timer() {
+const timer = () => {
   let count = sessionStorage.getItem("timerCount");
   setInterval(() => {
     count++;
@@ -42,4 +42,4 @@ function timer() {
       "sono passati " + count + " secondi";
     sessionStorage.setItem("timerCount", count);
   }, 1000);
-}
+};
