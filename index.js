@@ -34,6 +34,8 @@ form.addEventListener("submit", (event) => {
 });
 
 let count = 0;
+document.getElementById("counter").innerText =
+  "sono passati " + count + " secondi";
 const timer = () => {
   count = sessionStorage.getItem("timerCount");
   setInterval(() => {
