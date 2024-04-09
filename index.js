@@ -22,13 +22,11 @@ form.addEventListener("submit", (event) => {
   btnDelete.addEventListener("click", () => {
     console.log(existName);
     console.log(nameSavedArray);
-    if (existName) {
+    if (textUserName) {
       textUser.innerText = "Il nome è stato correttamente eliminato";
       existName.pop();
       nameSavedArray.pop();
       localStorage.setItem("name-user", JSON.stringify(existName));
-    } else {
-      textUser.innerText = "Non esiste nessun nome da eliminare";
     }
   });
 });
