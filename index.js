@@ -33,7 +33,6 @@ form.addEventListener("submit", (event) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", timer);
 let count = 0;
 const timer = () => {
   count = sessionStorage.getItem("timerCount");
@@ -44,3 +43,4 @@ const timer = () => {
     sessionStorage.setItem("timerCount", count);
   }, 1000);
 };
+document.addEventListener("DOMContentLoaded", timer);
