@@ -34,8 +34,9 @@ form.addEventListener("submit", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", timer);
+let count = 0;
 const timer = () => {
-  let count = sessionStorage.getItem("timerCount");
+  count = sessionStorage.getItem("timerCount");
   setInterval(() => {
     count++;
     document.getElementById("counter").innerText =
